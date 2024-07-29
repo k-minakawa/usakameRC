@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* 変数の設定 */
+:root {
+	/* 色管理用の変数 */
+	--white-color: #fff;
+	--black-color: #333333;
+  --bg-color: rgba(0, 191, 255, 0.1);
+	--main-color: #00BFFF;
+	--sub-color: #FF8080;
+	--primary-color: #FF0000;
+  --shadow-1: #0080AA;
+  --gray-color: #717171;
+}
+:root {
+  /* フォント */
+	--font: 'Zen Kaku Gothic New', sans-serif;
+  --accent-font: "Dela Gothic One", sans-serif;
+}
+:root {
+	/* z-index管理用の変数 */
+	--z-index-bg: -2;
+	--z-index-back: -1;
+	--z-index-default: 1;
+	--z-index-header: 100;
+	--z-index-menu: 150;
+	--z-index-top: 200;
+	--z-index-modal: 300;
+}
+/* 共通 */
+body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  color: var(--black-color);
+}
+.l_content {
+  width: 375px;
+	margin-left: auto;
+	margin-right: auto;
+  z-index: var(--z-index-default);
+}
+.m_inner {
+  padding: 120px 16px;
+}
