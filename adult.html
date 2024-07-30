@@ -29,6 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/course.css" />
   <!-- js -->
   <script src="js/main.js" defer></script>
@@ -38,6 +39,37 @@
   <div class="l_bg-img"></div>
 
 <!-- スクロール -->
-  <div class="l_content"></div>
+  <div class="l_content">
+
+        <!-- ヘッダー -->
+        <header class="l_header">
+          <div class="l_header__inner">
+            <h1 class="l_header__title">
+              <a href="index.html">
+                <img class="l_header-logo" src="img/ノーマルくん.png" alt="イメージキャラクター" width="600" height="800">
+              </a></h1>
+            
+              <!-- ナビ -->
+            <nav class="l_header__nav nav" id="js-nav">
+              <ul class="l_header__nav-list nav-items">
+                <li class="l_header__nav-item"><a href="index.html">トップページ</a></li>
+                <li class="l_header__nav-item"><a href="child.html">子供向けコース</a></li>
+                <li class="l_header__nav-item"><a href="adult.html">大人向けコース</a></li>
+                <li class="l_header__nav-item"><a href="index.html#benefits">入会特典</a></li>
+                <li class="l_header__nav-item"><a href="index.html#contact">お問い合わせ</a></li>
+              </ul>
+            </nav>
+    
+            <!-- ハンバーガー -->
+            <button class="l_header__hamburger hamburger" id="js-hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+        </div>
+      </div>
+    </header>
+    
+  </div>
 </body>
 </html>
