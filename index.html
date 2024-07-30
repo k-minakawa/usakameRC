@@ -40,19 +40,36 @@
 <!-- スクロール -->
   <div class="l_content">
 
-    <!-- ヘッダー -->
+        <!-- ヘッダー -->
     <header class="l_header">
-      <nav class="l_header__nav nav">
-        <ul class="l_header__nav-list nav-items">
-          <li class="l_header__nav-item"><a href="index.html">トップページ</a></li>
-          <li class="l_header__nav-item"><a href="">子供向けコース</a></li>
-          <li class="l_header__nav-item"><a href="">大人向けコース</a></li>
-          <li class="l_header__nav-item"><a href="">入会特典</a></li>
-          <li class="l_header__nav-item"><a href="">お問い合わせ</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div class="l_header__inner">
+        <h1 class="l_header__title">
+          <a href="index.html">
+            <img class="l_header-logo" src="img/ノーマルくん.png" alt="イメージキャラクター" width="600" height="800">
+          </a></h1>
+        
+          <!-- ナビ -->
+        <nav class="l_header__nav nav" id="js-nav">
+          <ul class="l_header__nav-list nav-items">
+            <li class="l_header__nav-item"><a href="index.html">トップページ</a></li>
+            <li class="l_header__nav-item"><a href="child.html">子供向けコース</a></li>
+            <li class="l_header__nav-item"><a href="adult.html">大人向けコース</a></li>
+            <li class="l_header__nav-item"><a href="index.html#benefits">入会特典</a></li>
+            <li class="l_header__nav-item"><a href="index.html#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+
+        <!-- ハンバーガー -->
+        <button class="l_header__hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </div>
   </div>
+</header>
+
+
 
 </body>
 </html>
