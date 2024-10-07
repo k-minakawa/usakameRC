@@ -31,22 +31,29 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/main.css" />
   <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
   <!-- 背景 -->
-  <div class="l_bg-img"></div>
+  <div class="l_bg-img">
+  </div>
 
 <!-- スクロール -->
   <div class="l_content">
 
         <!-- ヘッダー -->
     <header class="l_header">
+      <!-- のり眉くん -->
       <div class="l_header__inner">
-        <h1 class="l_header__title">
+        <button class="l_header-logo-wrap">
           <a href="index.html">
             <img class="l_header-logo" src="img/ノーマルくん.png" alt="イメージキャラクター" width="600" height="800">
-          </a></h1>
+            <h1 class="l_header-ttl">うさぎとかめRC</h1>
+          </a></button>
         
           <!-- ナビ -->
         <nav class="l_header__nav nav" id="js-nav">
@@ -58,6 +65,7 @@
             <li class="l_header__nav-item"><a href="index.html#contact">お問い合わせ</a></li>
           </ul>
         </nav>
+        
 
         <!-- ハンバーガー -->
         <button class="l_header__hamburger hamburger" id="js-hamburger">
@@ -66,10 +74,27 @@
           <span></span>
         </button>
     </div>
-  </div>
 </header>
 
+<!-- KV -->
+<div class="l_kv">
+  <div class="l_kv__top">
+  </div>
+  <div class="l_kv__bottom">
+  </div>
+</div>
 
 
+
+
+  <main class="l_content">
+  <!-- ごあいさつ -->
+    <section class="top_greeting m_inner">
+
+    </section>
+
+
+  </main>
+  </div>
 </body>
 </html>

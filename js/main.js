@@ -15,3 +15,21 @@ navLinks.forEach(navLink => {
         nav.classList.remove("active");
     });
 });
+
+// ナビのスクロールイン
+gsap.from(".l_header__inner", {
+  y: -200,
+  autoAlpha: 1,
+  duration: 1,
+  ease: "Power4.inOut",
+  scrollTrigger: {
+    trigger: ".l_header",
+    start: "bottm top",
+    toggleActions: 'play none none reverse',
+    // markers: true,
+  },
+  stagger: {
+    each: 0.6,
+    from: "start",
+  },
+});

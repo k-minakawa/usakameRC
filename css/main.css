@@ -31,23 +31,52 @@ body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
   color: var(--black-color);
 }
+
+/* 背景 */
+.l_bg-img {
+	display: none;
+}
+@media screen and (min-width: 768px) {
+	.l_bg-img {
+		width: 100vw;
+		height: 100vh;
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		z-index: var(--z-index-bg);
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+
+/* スクロール */
 .l_content {
   width: 375px;
-	margin-left: auto;
-	margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   z-index: var(--z-index-default);
+}
+@media screen and (min-width: 768px) {
+	.l_content {
+		margin-left: 328px;
+		margin-right: 0;
+	}
 }
 .m_inner {
   padding: 120px 16px;
 }
 
+
+
 /* ヘッダー */
 .l_header {
-	height: 75px;
 	position: fixed;
+	width: 375px;
+	height: 75px;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 999;
 }
 .l_header__inner {
@@ -57,13 +86,17 @@ body {
 	justify-content: space-between;
 	height: inherit;
 	position: relative;
+
 }
-.l_header__title {
-	width: 40px;
+.l_header-logo-wrap {
+width: 40px;
 }
 .l_header-logo {
   height: 40px;
 	object-fit: contain;
+}
+.l_header-ttl {
+	display: none;
 }
 .nav {
 	display: none;
@@ -157,4 +190,72 @@ font-weight: bold;
 	transform: translateY(0) rotate(-45deg);
 top:5px;
 left:6px;
+}
+
+/* KV */
+.l_kv {
+	width: 375px;
+	height: 100vh;
+	background-image: url(../img/KV.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.l_kv__top {
+	position: absolute;
+	background-color: var(--main-color);
+	height: 160px;
+	width: 100%;
+  top: 0;
+	clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
+	position: relative;
+}
+.l_kv__top::after {
+	content: "うさぎとかめRC";
+	position: absolute;
+	font-family: var(--accent-font);
+	color: var(--white-color);
+	font-size: 32px;
+	rotate: -10deg;
+  top: 40px;
+	left: 24px;
+}
+
+.l_kv__bottom {
+	position: absolute;
+	background-color: var(--main-color);
+	height: 160px;
+	width: 100%;
+	bottom: 0;
+		clip-path: polygon(0 42%, 100% 3%, 100% 100%, 0 100%);
+}
+.l_kv__bottom::before {
+	content: "";
+	position: absolute;
+	width: 264px;
+	height: 16px;
+	rotate: -10deg;
+	background-color: var(--sub-color);
+	top: 65px;
+	left: 36px;
+}
+.l_kv__bottom::after {
+	content: "“走ることが楽しい”の第一歩をここで";
+	text-align: end;
+	width: 320px;
+	position: absolute;
+	font-family: var(--accent-font);
+	color: var(--white-color);
+	font-size: 32px;
+	rotate: -10deg;
+  top: 35px;
+	left: 25px;
+}
+
+
+
+
+.top_greeting {
+	margin: 500px;
 }
