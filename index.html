@@ -39,12 +39,32 @@
 </head>
 <body>
   <!-- 背景 -->
-  <div class="l_bg-img">
+  <div class="l_bg">
+    <div class="l_bg__wrap">
+      <div class="l_bg__top"></div>
+      <!-- 背景スライド -->
+      <div class="l_bg__slide">
+        <ul>
+          <li><img class="l_bg__slide-img" src="img/子供練習.jpg"></li>
+          <li><img class="l_bg__slide-img" src="img/大人コース.jpg"></li>
+          <li><img class="l_bg__slide-img" src="img/大人練習.jpg"></li>
+          <li><img class="l_bg__slide-img" src="img/子供練習.jpg"></li>
+          <li><img class="l_bg__slide-img" src="img/大人コース.jpg"></li>
+          <li><img class="l_bg__slide-img" src="img/大人練習.jpg"></li>
+        </ul>
+      </div>
+    <div class="l_bg__bottom"></div>
+    </div>
   </div>
-
+  <div class="l_bg__contact">
+    <div class="l_bg__gif"><img src="img//走り込みくん.gif" alt=""></div>
+    <button class="l_bg__btn">
+    <a href="index.html#contact" class="l_bg__img">
+    <img src="img/ポスト.png" alt=""></a></button>
+  </div>
+  
 <!-- スクロール -->
   <div class="l_content">
-
         <!-- ヘッダー -->
     <header class="l_header">
       <!-- のり眉くん -->
@@ -61,7 +81,7 @@
             <li class="l_header__nav-item"><a href="index.html">トップページ</a></li>
             <li class="l_header__nav-item"><a href="child.html">子供向けコース</a></li>
             <li class="l_header__nav-item"><a href="adult.html">大人向けコース</a></li>
-            <li class="l_header__nav-item"><a href="index.html#benefits">入会特典</a></li>
+            <li class="l_header__nav-item"><a href="tariff.html">入会特典</a></li>
             <li class="l_header__nav-item"><a href="index.html#contact">お問い合わせ</a></li>
           </ul>
         </nav>
@@ -128,7 +148,7 @@
             <div class="top_coures__wrap-img" >
               <img src="img/ハードルくん.png" alt="マスコットキャラクター" width="600" height="800">
             </div>
-            <a class="top_coures__wrap-rink" href="child.html">詳しく見てみる！</a>
+            <a class="top_coures__wrap-rink" href="adult.html">詳しく見てみる！</a>
           </div>
         </div>
 
@@ -141,9 +161,9 @@
               <div class="top_coures__sns-img">
                 <img src="img/安座くん.png" alt="マスコットキャラクター" width="600" height="800">
               </div>
-              <div class="top_coures__sns-inst">
+              <a href="リンク先のURL" class="top_coures__sns-inst">
                 <img src="img/インスタ.png" alt="Instagram" width="100" height="100">
-              </div>
+              </a>
             </div>
           </div>
     </section>
@@ -196,10 +216,16 @@
       <div class="top_tariff__perk-img">
         <img src="img/特典くん.png" alt="マスコットキャラクター">
       </div>
+      <div class="top_tariff__rink-wrap">
+        <p class="top_tariff__p">Coming soon...!</p>
+        <!-- 特典完成後使用！ -->
+        <!-- <a class="top_tariff__rink" href="tariff.html">詳しく見てみる！</a> -->
+      </div>
+      
     </section>
     
     <!-- お問い合わせ -->
-    <section class="top_contact m_inner">
+    <section id="contact" class="top_contact m_inner">
       <h2 class="m_section__ttl">お問い合わせ！</h2>
       <p class="top_contact__txt">ご入会や活動内容に対して、質問やご不明点などがございましたら、以下のフォームからお願いいたします。担当者が確認次第、ご返信いたします。</p>
 
@@ -254,7 +280,68 @@
 
           <div class="top_contact__privacy">
             <input type="checkbox" name="プライバシーポリシー" id="プライバシーポリシー" class="top_contact__privacy-check" required>
-            <button class="top_contact__privacy-txt">プライバシーポリシー<span class="top_contact__accent">に同意する</span></button>
+            <div class="top_contact__policy">
+              <input type="radio" id="modal-1__open" class="modal-1__open-input" name="modal-1__trigger"/>
+              <label for="modal-1__open"  class="modal-1__open-label">プライバシーポリシー<span class="top_contact__accent">に同意する</span></label>
+              <input type="radio" id="modal-1__close" name="modal-1__trigger"/>
+              <div class="modal-1">
+                <div class="modal-1__content-wrap">
+                  <label for="modal-1__close" class="modal-1__close-label">×</label>
+                  <div class="modal-1__content">
+                    うさぎとかめRC（以下「当サイト」といいます）は、当サイトが取得した個人情報の取扱いに関し、個人情報の保護に関する法律、個人情報保護に関するガイドライン等の指針、その他個人情報保護に関する関係法令を遵守します。<br><br>
+                    １．取得する情報およびその取得方法、利用目的<br>
+                    当サイトが取得する顧客情報は、取得方法に応じて以下のとおりとなります。<br>
+                    （1）顧客から直接取得する情報と取得方法<br>
+                    当サイトは、当サイトが提供するインターネットサイト（以下「本サイト」といいます）の運営に必要な範囲で、本サイトの利用者（以下「顧客」といいます）から、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先その他の記述等により特定の個人を識別できる情報の当該情報単体から、特定の個人を識別できる情報（個人時期別情報）（以下「個人情報」といいます）を取得することがあります。<br>
+                    （2）情報の利用目的<br>
+                    当サイトは、取得した個人情報を以下に定める目的のために使用します。また、以下の内容は予告なく変更・追加する場合がございます。<br>
+                    ・サービスの提供<br>
+                    ・ご本人様確認<br><br>
+                    2.個人情報の管理<br>
+                    当サイトは、顧客から取得した個人情報の管理について、以下を徹底します。<br>
+                    （1）情報の正確性の確保<br>
+                    取得した個人情報については、常に正確かつ最新の情報となるよう努めます。<br>
+                    （2）安全管理措置<br>
+                    当サイトは、組織的な個人情報の管理については、社内規定による厳重な取扱方法を規定し、規定に基づいた取扱いと厳格な運用を徹底しています。<br>
+                    （3）個人情報管理の委託先の監督<br>
+                    個人情報の管理を外部委託する場合には、当サイトの規程に基づく委託先にのみ委託し適切に管理します。<br>
+                    （4）個人情報の保存期間と廃棄<br>
+                    取得した個人情報は、保存期間を設定し、保存期間終了後は廃棄します。<br><br>
+                    3．個人情報の第三者への提供<br>
+                    当サイトは、取得した個人情報を、第三者に提供することはありません。また、今後、第三者提供を行う場合は、提供する情報と目的を提示し、顧客の同意を得た場合のみ行います。<br><br>
+                    4．個人情報の共同利用<br>
+                    当サイトは、顧客の個人情報に関して、以下のとおり共同利用します。<br>
+                    ・業務提携先での顧客管理、DMの送信などの販促活動など<br><br>
+                    5.個人情報の開示・訂正・利用停止<br>
+                    個人情報について、開示、訂正、利用停止等のお申し出があった場合には、本人の申し出であることを確認の上、当サイト所定の方法に基づき対応致します。具体的な方法は、個別にご案内しますので、下記受付窓口までお問い合わせください。<br><br>
+                    6. セキュリティ<br>
+                    当サイトは、ウェブサイト経由で、SSLによって個人情報を取得することがあります。<br><br>
+                    7.個人情報の取得方法(Cookieについて)<br>
+                    当サイトはユーザーが利用登録をする際に氏名・住所・電話番号・メールアドレスなどの個人情報をお尋ねすることがあります。また、ユーザーと提携先などとの間でなされたユーザーの個人情報を含む取引記録や決済に関する情報を、当サイトの提携先（情報提供元・広告主・広告配信先などを含みます。以下｢提携先｣といいます。）などから収集することがあります。<br>
+                    ・クッキー（Cookie）<br>
+                    Cookieは、ユーザーが当サイトあるいは他サイトを閲覧された際、使用されたコンピューターやデバイス内に記録されます。ただし、この情報には、お名前・ご住所・メールアドレス・電話番号など個人を特定できるものは一切含まれません。
+                    Cookieによる情報収集を好まれない場合、ユーザーご自身でブラウザで受け入れを拒否するよう設定することも可能です。ただし、この設定により一部のコンテンツが正しく機能しない場合、またサービスが受けられない場合がございます。あらかじめご了承ください。
+                    なお、設定方法に関してはGoogleポリシーと規約にてご確認いただけます。<br>
+                    ・アクセス解析ツール<br>
+                    当サイトでは、Googleの提供するアクセス解析ツール「Google Analytics」を使用しています。Google Analyticsはトラフィックデータの収集のためCookieを利用します。このトラフィックデータは匿名で収集されており、個人を特定するものではございません。
+                    ユーザーは、Cookieを無効化することにより、データの収集を拒否することができます。お使いのブラウザより設定をご確認ください。
+                    なお、この規約に関しては、Google アナリティクス利用規約およびGoogleポリシーと規約でご確認いただけます。<br><br>
+                    8.お問い合わせ先<br>
+                    本サービス、個人情報の取扱いについては、以下の窓口にご連絡ください。<br>
+                    <br>
+                    お問い合わせ窓口<br>
+                    うさぎとかめRC<br>
+                    代表：山領 駿<br>
+                    メールアドレス：〇〇〇〇〇〇<br>
+                    電話：〇〇〇〇〇〇<br>
+                    <br>
+                    最終更新日：2025/05/01</div>
+                </div>
+                <label for="modal-1__close">
+                  <div class="modal-1__background"></div>
+                </label>
+              </div>
+            </div>
           </div>
           <div class="top_contact__btn">
           <input type="submit" value="送信する" class="top_contact__submit">

@@ -8,18 +8,19 @@ ham.addEventListener('click', function () {
 });
 
 ///クリックしたら消えるようにする///
-const navLinks = document.querySelectorAll(".nav-items__item");
+const navLinks = document.querySelectorAll(".l_header__nav-item");
 navLinks.forEach(navLink => {
-    navLink.addEventListener("click", () => {
-        ham.classList.remove("active");
-        nav.classList.remove("active");
+    navLink.addEventListener('click', () => {
+        ham.classList.remove('active');
+        nav.classList.remove('active');
     });
 });
+
 
 // ナビのスクロールイン
 gsap.from(".l_header__inner", {
   y: -200,
-  autoAlpha: 1,
+  autoAlpha: 0,
   duration: 1,
   ease: "Power4.inOut",
   scrollTrigger: {
@@ -33,29 +34,3 @@ gsap.from(".l_header__inner", {
     from: "start",
   },
 });
-
-//ポップアップ
-//要素を取得
-const modal = document.querySelector('.js-modal'),
-      open = document.querySelector('.js-modal-open'),
-      close = document.querySelector('.js-modal-close');
-
-//「開くボタン」をクリックしてモーダルを開く
-function modalOpen() {
-  modal.classList.add('is-active');
-}
-open.addEventListener('click', modalOpen);
-
-//「閉じるボタン」をクリックしてモーダルを閉じる
-function modalClose() {
-  modal.classList.remove('is-active');
-}
-close.addEventListener('click', modalClose);
-
-//「モーダルの外側」をクリックしてモーダルを閉じる
-function modalOut(e) {
-  if (e.target == modal) {
-    modal.classList.remove('is-active');
-  }
-}
-addEventListener('click', modalOut);
