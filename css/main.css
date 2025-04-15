@@ -113,22 +113,22 @@ body {
 			display: block;
 			position: fixed;
 			height: 400px;
-			width: 100%;
+			width: calc(100% - 775px);
 			right: 0;
 			bottom: 0;
 		}
 		.l_bg__gif {
 		position: absolute;
-		width: calc((100% - 775px) / 3);
-		right: 24%;
+		width: calc(100% / 3);
+		right: 50%;
 		bottom: 0;
 		z-index: var(--z-index-modal);
 		}
 		.l_bg__img {
 			position: absolute;
-			right: 8%;
+			right: 20%;
 			bottom: 0;
-			width: calc((100% - 775px) / 3);
+			width: calc(100% / 3);
 		}
 		.l_bg__img::before {
 			content: "";
@@ -159,6 +159,9 @@ body {
 .m_inner {
   padding: 120px 16px;
 }
+.m_inner:nth-child(even) {
+	background: rgba(0, 191, 255, 0.1);
+}
 .m_section__ttl {
   font-size: 24px;
   color: var(--white-color);
@@ -181,7 +184,7 @@ body {
 	border-radius: 50%;
 	top: 0;
 	left: -5%;
-	z-index: var(--z-index-back);
+	z-index: var(--z-index-top);
 }
 .m_section__ttl::after {
 	content: "";
@@ -266,6 +269,7 @@ body {
 }
 @media screen and (min-width: 768px) {
 	.nav {
+		margin-top: 40px;
 		position: static;
 		display: block;
 		transform: translateX(0);
@@ -281,7 +285,6 @@ body {
 }
 @media screen and (min-width: 768px) {
 	.l_header__nav-list {
-		font-size: 32px;
 		color: var(--shadow-1);
 		text-shadow: 2px 2px 0 var(--white-color);
 		width: 100%;
@@ -297,6 +300,11 @@ body {
 	flex-direction: column;
 	gap: 80px;
 	align-items: center;
+}
+@media screen and (min-width: 768px) {
+	.nav-items {
+		gap: 24px;
+	}
 }
 @media screen and (min-width: 1080px) {
 	.nav-items {
@@ -316,7 +324,6 @@ body {
 }
 .hamburger {
 	background: rgba(255, 255, 255, 0.6);
-	/* background: var(--sub-color); */
 	border-radius: 10px;
 	padding: 8px;
 
@@ -393,7 +400,7 @@ left:6px;
 	clip-path: polygon(0 0, 100% 0, 100% 30%, 0 70%);
 	position: relative;
 }
-.l_kv__top::after {
+.u_top__ttl1::after {
 	content: "うさぎとかめRC";
 	position: absolute;
 	font-family: var(--accent-font);
@@ -412,7 +419,7 @@ left:6px;
 	bottom: 0;
 	clip-path: polygon(0 42%, 100% 3%, 100% 100%, 0 100%);
 }
-.l_kv__bottom::before {
+.u_top__ttl2::before {
 	content: "";
 	position: absolute;
 	width: 264px;
@@ -422,7 +429,7 @@ left:6px;
 	top: 65px;
 	left: 36px;
 }
-.l_kv__bottom::after {
+.u_top__ttl2::after {
 	content: "“走ることが楽しい”の第一歩をここで";
 	text-align: end;
 	width: 320px;
@@ -478,9 +485,6 @@ left:6px;
 }
 
 /* コース紹介 */
-.top_coures {
-	background: rgba(0, 191, 255, 0.1);
-}
 .top_coures__wrap {
 	margin-top: 80px;
 }
@@ -686,9 +690,6 @@ text-align: center;
 } */
 
 /* お問い合わせ */	
-.top_contact {
-  background: rgba(0, 191, 255, 0.1);
-}
 .top_contact__txt {
 	margin-top: 80px;
 }
@@ -930,4 +931,161 @@ text-align: center;
 	color: var(--white-color);
 }
 
+/* 下層ページ */
+/* トプ画 */
+.m_top {
+	background: var(--white-color);
+	display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+}
+.m_accent {
+	width: 100%;
+	height: calc((100% - 540px) / 2);
+	background: var(--main-color);
+}
+.m__top {
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+}
+.m__bottom {
+	clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
+}
+.m_kv__content {
+	padding: 16px;
+	height: 460px;
+}
+.m_kv__course {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	color: var(--white-color);
+	-webkit-text-stroke: 2px var(--primary-color);
+}
+.m_kv__img-wrap {
+	margin-top: 40px;
+	height: 240px;
+	position: relative;
+}
+.m_kv__sub-img {
+  position: absolute;
+	width: 90px;
+	bottom: 0;
+	right: 5%;
+}
+.m_kv__ttl {
+	margin-top: 32px;
+  font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+.m_kv__accent {
+	background-image: linear-gradient(transparent 60%, var(--sub-color) 0%);
+}
+.m_kv_txt {
+	margin-top: 16px;
+}
+.m_inner__lo {
+  padding: 120px 16px;
+}
+.m_inner__lo:nth-child(odd) {
+	background: rgba(0, 191, 255, 0.1);
+}
 
+/* 講師紹介 */
+.lo_lecturer__inner {
+	margin-top: 80px;
+}
+.lo_lecturer__wrap {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+.lo_lecturer__wrap:not(:first-child) {
+  margin-top: 48px;
+}
+.lo_lecturer__img-wrap {
+	width: 160px;
+	height: 160px;
+}
+.lo_lecturer__name {
+	font-weight: bold;
+}
+
+/* 練習内容 */
+.lo_practice__inner {
+	margin-top: 80px;
+}
+.lo_practice__wrap:not(:first-child) {
+  margin-top: 48px;
+}
+.lo_practice__unit {
+	display: flex;
+	align-items: center;
+  justify-content: space-around;
+}
+.lo_practice__unit:nth-child(even) {
+	flex-direction: row-reverse;
+}
+.lo_practice__img-wrap {
+	width: 200px;
+	height: 160px;
+}
+.lo_practice__ttl {
+	font-weight: bold;
+	font-size: 20px;
+  color: var(--main-color);
+	text-align: center;
+}
+.lo_practice__txt {
+	text-align: center;
+	margin-top: 16px;
+}
+.m_rink__btn {
+	margin-bottom: 120px;
+	font-weight: bold;
+	color: var(--main-color);
+	padding: 16px;
+}
+.m_rink {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+.m_rink__arrow {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: var(--main-color);
+	border-radius: 50%;
+	position: relative;
+}
+.m_rink__arrow::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--white-color);
+  border-right: 2px solid var(--white-color);
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translateY(-50%) rotate(-135deg);
+}
+/* 子供コース */
+.u_child {
+	font-family: var(--accent-font);
+	font-weight: normal;
+}
+
+/* 大人コース */
+.u_adult {
+	width: 160px;
+	height: 160px;
+	border-radius: 20px;
+	box-shadow: 8px 8px 0 0 var(--shadow-1);
+	object-fit: cover;
+}
+.u_adult__img {
+	box-shadow: 4px 4px 0 0 var(--shadow-1);
+}
