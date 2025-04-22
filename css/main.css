@@ -1039,8 +1039,8 @@ text-align: center;
 	text-align: center;
 }
 .lo_practice__txt {
-	text-align: center;
 	margin-top: 16px;
+	padding: 0 24px;
 }
 .m_rink__btn {
 	margin-bottom: 120px;
