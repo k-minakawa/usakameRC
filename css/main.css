@@ -265,7 +265,7 @@ body {
   height: 100vh;
   background-color: var(--main-color);
 	transform: translateX(-100%);
-  transition: ease .4s;
+  transition: ease .2s;
 }
 @media screen and (min-width: 768px) {
 	.nav {
@@ -331,7 +331,7 @@ body {
 .hamburger span {
 	position: relative;
 	display: inline-block;
-	transition: all .4s;
+	transition: all .2s;
 	display: block;
 	width: 24px;
   height: 2px;
@@ -467,21 +467,23 @@ left:6px;
 .top_greeting__wrap-ruby {
 	font-size: 10px;
 }
+.u_ruby {
+	margin-right: 16px;
+}
 .top_greeting__wrap-txt {
 	font-size: 24px;
 	font-weight: bold;
 	background-image: linear-gradient(transparent 60%, var(--sub-color) 0%);
 }
 .top_greeting__txt {
-	margin-top: 40px;
 	position: relative;
 	width: 300px;
-	margin: 40px auto;
+
 }
 .top_greeting__img {
 	width: 135px;
   margin-left: auto;
-	margin-top: -60px;
+	margin-top: -25px;
 }
 
 /* コース紹介 */
@@ -507,6 +509,10 @@ left:6px;
 	font-weight: bold;
 	color: var(--main-color);
 }
+.top_coures__wrap-nate {
+	font-size: 14px;
+
+}
 .top_coures__rink-wrap {
   display: flex;
   align-items: center;
@@ -518,7 +524,7 @@ left:6px;
 	background: var(--primary-color);
 	padding: 8px 48px 8px 16px;
 	position: relative;
-	transition: .4s;
+	transition: .2s;
 }
 .top_coures__wrap-rink:hover {
   background: var(--white-color);
@@ -631,7 +637,7 @@ left:6px;
 	font-weight: bold;
 	color: var(--primary-color);
 	border-bottom: #FF8080 solid 2px;
-	transition: .4s;
+	transition: .2s;
 }
 .top_tariff__note-rink:hover {
   background: var(--primary-color);
@@ -950,7 +956,7 @@ margin-top: 24px;
 	background: var(--primary-color);
 	padding: 8px 80px 8px 48px;
 	position: relative;
-	transition: .4s;
+	transition: .2s;
 }
 .top_contact__btn:hover {
   background: var(--white-color);
@@ -1025,6 +1031,7 @@ margin-top: 24px;
 	margin-top: 40px;
 	height: 240px;
 	position: relative;
+	
 }
 .m_kv__sub-img {
   position: absolute;
@@ -1068,9 +1075,11 @@ margin-top: 24px;
 .lo_lecturer__img-wrap {
 	width: 160px;
 	height: 160px;
+
 }
 .lo_lecturer__name {
 	font-weight: bold;
+	font-size: 24px;
 }
 
 /* 練習内容 */
@@ -1107,7 +1116,7 @@ margin-top: 24px;
 	font-weight: bold;
 	color: var(--main-color);
 	padding: 16px;
-  transition: .4s;
+  transition: .2s;
 }
 .m_rink__btn:hover {
   color: var(--primary-color);
@@ -1144,14 +1153,12 @@ margin-top: 24px;
 
 /* 大人コース */
 .u_adult {
-	width: 160px;
-	height: 160px;
 	border-radius: 20px;
 	box-shadow: 8px 8px 0 0 var(--shadow-1);
 	object-fit: cover;
 }
 .u_adult__img {
-	box-shadow: 4px 4px 0 0 var(--shadow-1);
+	box-shadow: 8px 8px 0 0 var(--shadow-1);
 }
 .m_note {
 	padding: 16px 32px;
@@ -1175,7 +1182,7 @@ margin-top: 24px;
   color: var(--main-color);
   border: solid 2px var(--main-color);
   border-radius: 3px;
-  transition: .4s;
+  transition: .2s;
 }
 .m_note__rink:hover {
   background: var(--main-color);
